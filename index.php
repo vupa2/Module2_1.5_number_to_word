@@ -36,8 +36,8 @@ function readNumber($num)
 {
   $result = '';
   if (is_numeric($num)) {
-    $num = intval($num);
-    switch (strlen((string)$num)) {
+    $num = (string)intval($num);
+    switch (strlen($num)) {
       case 1:
         $result = readOneDigit($num);
         break;
