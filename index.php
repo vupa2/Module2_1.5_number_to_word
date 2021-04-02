@@ -34,7 +34,6 @@ function readThreeDigit($num)
 
 function readNumber($num)
 {
-  $result = '';
   if (is_numeric($num)) {
     $num = (string)intval($num);
     switch (strlen($num)) {
@@ -78,6 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       display: block;
       margin: 20px 0;
     }
+    
     input[name="numInput"] {
       width: 500px;
     }
